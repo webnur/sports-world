@@ -3,16 +3,24 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
+    /* width: 1321px; */
     width: 90%;
+    margin: 0 auto;
 }
-
+main {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
 /*------------------------ header styles  ----------------------*/
 header, main {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .top-bannners {
     display: flex;
@@ -59,72 +67,61 @@ header, main {
 /*-------------- player blogs area and side menu --------------*/
 .blogs-and-menu {
    
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    /* grid-template-columns: 315px repeat(3, 1fr); */
+    grid-template-columns: 26% 1fr;
+    grid-column-gap: 15px;
     
 }
-.side-menus {
-    /* width: 312px; */
-    width: 22%;
-    height: 312px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column; 
-    background-color: black;
+
+.side-menu ul {
+    padding: 25px 16px;
     border-radius: 10px;
-    margin-right: 15px;
+    background-color: #161616;
+    width: 280px;
+    
 }
-.menu {
-    margin-bottom: 25px;
-    margin-left: 30px;
-    margin-top: 30px;
-    padding: 0;
+.side-menu ul li {
+    text-align: center;
+    list-style: none;
+    background-color: #fff; 
+    margin-bottom: 30px;
+    padding: 18px;
+    border-radius: 5px;
+   
+}
+.side-menu ul li a {
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 20px;
   
 }
-
-.side-item-1 {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 20px;
-    color: #161616;
-    background-color: #fff;
-    padding: 15px 30px;
-    border-radius: 7px;
-}
-.side-item-2 {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 20px;
-    color: #161616;
-    background-color: #fff;
-    padding: 15px 70px;
-    border-radius: 7px;
-}
-.side-item-3 {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 20px;
-    color: #161616;
-    background-color: #fff;
-    padding: 15px 106px;
-    border-radius: 7px;
+.side-menu ul li:nth-last-child(1) {
+    background-color: red;
+    color: #fff
 }
 
 /*--------------------- blogs area  ----------------------*/
 
 .blogs {
-    
-    margin-top: 30px;
+    margin-top: 16px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 15px;
-    grid-column-gap: 10px;
+    grid-row-gap: 25px;
+    grid-column-gap: 24px;
 }
 .blog {
+    /* width: 100%; */
     border: 1px solid #E8E8E8;
     border-radius: 5px;
+    padding-bottom: 10px;
 }
 .blog-image img {
-    width: 80%;
+    width: 100%;
+    height: 175px;
 }
 .blog-content {
     margin-top: 25px;
@@ -142,8 +139,7 @@ header, main {
     font-weight: 600;
     font-size: 18px;
     color: #161616;
-    width: 272px;
-    height: 54px;
+ 
 }
 
 .blog-footer {
@@ -188,4 +184,47 @@ hr {
     text-decoration: none;
     color: #B9B9B9;
     margin-left: 20px;
+}
+
+
+
+/*---------------------- live match area  -----------------------*/
+
+.live-match-and-menu {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-column-gap: 25px;
+}
+.live-macths {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 20px;
+}
+.match {
+   
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    margin-top: 15px;
+}
+.teams {
+    display: flex;
+    align-items: center;
+}
+.team img {
+    /* width: 166px; */
+    width: 90%;
+
+}
+.team-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #161616;
+}
+.match-duration {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
 }
