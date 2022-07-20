@@ -1,0 +1,191 @@
+/*---------------------- google font ---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+}
+
+/*------------------------ header styles  ----------------------*/
+header, main {
+    display: flex;
+    justify-content: center;
+}
+.top-bannners {
+    display: flex;
+    justify-content: space-evenly;
+    height: 646px;
+    background: #161616;
+    border-radius: 30px;
+    color: #fff;
+}
+.header-title {
+    font-weight: 700;
+    font-size: 70px;
+    width: 531px;
+}
+.header-description {
+    font-weight: 400;
+    font-size: 16px;  
+    width: 506px;
+    margin-bottom: 45px;
+   
+}
+.main-button {
+    text-decoration: none;
+    background: #DD0000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 16px 25px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.banner-image img {
+    width: 581px;
+    height: 645px;
+
+}
+.fa-angle-right {
+    margin-left: 7px;
+    
+}
+
+
+/*-------------- player blogs area and side menu --------------*/
+.blogs-and-menu {
+   
+    display: flex;
+    
+}
+.side-menus {
+    /* width: 312px; */
+    width: 22%;
+    height: 312px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; 
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.menu {
+    margin-bottom: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 0;
+  
+}
+
+.side-item-1 {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: #161616;
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 7px;
+}
+.side-item-2 {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: #161616;
+    background-color: #fff;
+    padding: 15px 70px;
+    border-radius: 7px;
+}
+.side-item-3 {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: #161616;
+    background-color: #fff;
+    padding: 15px 106px;
+    border-radius: 7px;
+}
+
+/*--------------------- blogs area  ----------------------*/
+
+.blogs {
+    
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+}
+.blog {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}
+.blog-image img {
+    width: 80%;
+}
+.blog-content {
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.blog-button {
+    text-decoration: none;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 18px;
+}
+.blog-short-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #161616;
+    width: 272px;
+    height: 54px;
+}
+
+.blog-footer {
+    display: flex;
+}
+
+.duration, .comment {
+    margin-right: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(22, 22, 22, 0.7);
+}
+
+/*---------------- footer area styles -------------- */
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #161616;
+    color: #fff;
+}
+
+
+hr {
+    
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+ 
+}
+.footer-menu {
+    margin-top: 25px;
+}
+.footer-menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu ul li {
+    list-style: none;
+}
+.footer-menu ul li a {
+    text-decoration: none;
+    color: #B9B9B9;
+    margin-left: 20px;
+}
