@@ -109,6 +109,10 @@ header, main {
     background-color: red;
     color: #fff
 }
+.side-menu ul li:active {
+    background-color: red;
+    color: #fff
+}
 
 /*--------------------- blogs area  ----------------------*/
 
@@ -159,6 +163,18 @@ header, main {
     color: rgba(22, 22, 22, 0.7);
 }
 
+.view-all-button {
+    margin: auto;
+    display: none;
+    margin-top: 50px;
+}
+.view-all-button a {
+    text-decoration: none;
+    background-color: #DD0000;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
 /*---------------- footer area styles -------------- */
 
 footer {
@@ -267,16 +283,20 @@ footer p {
     .side-menu ul{
         flex-direction: row;
         background: none;
-        width: 100%;
+        justify-content: center;
+        
        
     }
     .side-menu ul li {
         margin-left: 20px;
-        padding: 15px 30px;
+        padding: 10px 30px;
         border: 1px solid black;
     }
     .blogs, .live-macths {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .view-all-button {
+        display: block;
     }
 }
 
