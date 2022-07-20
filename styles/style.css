@@ -80,10 +80,12 @@ header, main {
 }
 
 .side-menu ul {
+    display: flex;
+    flex-direction: column;
     padding: 25px 16px;
     border-radius: 10px;
     background-color: #161616;
-    width: 280px;
+    /* width: 280px; */
     
 }
 .side-menu ul li {
@@ -160,7 +162,7 @@ header, main {
 /*---------------- footer area styles -------------- */
 
 footer {
-    padding: 50px 0;
+    padding: 60px 0;
     text-align: center;
     background-color: #161616;
     color: #fff;
@@ -175,6 +177,7 @@ hr {
 }
 .footer-menu {
     margin-top: 25px;
+   
 }
 .footer-menu ul {
     display: flex;
@@ -190,7 +193,10 @@ hr {
     margin-left: 20px;
 }
 
-
+.social-menu{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
 .social-menu ul {
     display: flex;
     justify-content: center;
@@ -205,6 +211,9 @@ hr {
     color: aqua;
 }
 
+footer p {
+    margin-right: 70px;
+}
 /*---------------------- live match area  -----------------------*/
 
 .live-match-and-menu {
@@ -229,6 +238,7 @@ hr {
 .teams {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .team img {
     /* width: 166px; */
@@ -250,12 +260,28 @@ hr {
 
 /*------------------------ responsive at tablet view  -------------------------*/
 
-@media only screen and (min-width: 577px) and (max-width: 992px){
-   
-
+@media screen and (min-width: 577px) and (max-width: 992px){
+    .blogs-and-menu, .live-match-and-menu {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .side-menu ul{
+        flex-direction: row;
+        background: none;
+        width: 100%;
+       
+    }
+    .side-menu ul li {
+        margin-left: 20px;
+        padding: 15px 30px;
+        border: 1px solid black;
+    }
+    .blogs, .live-macths {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 576px){
+ 
     .header-title {
         font-size: 1.5em;
     }
@@ -265,17 +291,22 @@ hr {
     .top-bannners {
         grid-template-columns: repeat(1, 1fr);
     }
-    .blogs-and-menu {
+    .blogs-and-menu, .live-match-and-menu {
         grid-template-columns: repeat(1, 1fr);
     }
-    .blogs {
+    
+    .blogs, .live-macths {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .live-macths {
+        justify-content: center;
     }
     .footer-menu ul {
         flex-direction: column;
     }
-    .social-menu ul {
-      
-        flex-direction: column;
+    footer p {
+        margin-right: 5px;
+        margin-bottom: 40px;
     }
+   
 }
