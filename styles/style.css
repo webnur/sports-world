@@ -23,34 +23,27 @@ header, main {
     align-items: center;
 }
 .top-bannners {
-
-    /* display: flex;
-    justify-content: space-evenly; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: #034646;
     border-radius: 30px;
     color: #fff;
-    padding-bottom: 40px;
+   
 }
 .banner {
     margin-left: 40px;
 }
 .header-title {
     font-weight: 700;
-    font-size: 4em;
-    animation: jump 2 ease-in-out 0.5s infinite alternate;     
+    font-size: 3.80em;
+     
 }
 
-.header-description {
-    font-weight: 400;
-    font-size: 16px;
-}
 
 .header-description {
     font-weight: 400;
     font-size: 16px;  
-    margin-bottom: 45px;
+    margin-bottom: 70px;
    
 }
 .main-button {
@@ -299,6 +292,19 @@ footer p {
 
 /*---------------- tablet device  ----------------------*/
 @media screen and (min-width: 577px) and (max-width: 992px){
+    .top-bannners{
+        padding-bottom: 30px;
+    }
+    .header-title {
+        font-size: 3em;
+    }
+    .header-description{
+        margin-bottom: 43px;
+    }
+    .banner-image {
+        margin-top: 125px;
+    }
+    
     .blogs-and-menu, .live-match-and-menu {
         grid-template-columns: repeat(1, 1fr);
     }
