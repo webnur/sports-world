@@ -56,18 +56,35 @@ header, main {
     font-size: 20px;
     margin-top: 30px;
 
-    animation-name: example;
+    animation-name: rendom-background;
     animation-duration: 4s;
     animation-iteration-count: infinite
 }
 
-@keyframes example {
+@keyframes rendom-background {
     0%   {background-color:red; left:0px; top:0px;}
     25%  {background-color:yellow; left:200px; top:0px;}
     50%  {background-color:blue; left:200px; top:200px;}
     75%  {background-color:green; left:0px; top:200px;}
     100% {background-color:red; left:0px; top:0px;}
   }
+
+@keyframes sliding {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 130px;
+    }
+}
+.animation-ball img {
+    width: 70px;
+    margin-top: 29px;
+    margin-right: 10px;
+    position: relative;
+    animation: sliding 2s ease 0.5s infinite  alternate;
+    animation-play-state: running;
+}
 
 .banner-image img {
     width: 100%;
